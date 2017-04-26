@@ -1,0 +1,27 @@
+
+/* ==================================
+
+// Navbar
+
+================================== */
+
+.navbar {
+	@include row;
+
+	.navbar__icons {
+		@include column(12);
+		background-color: blue;
+
+		&--brand {
+			background-color: red;
+		}
+
+		&--menu {
+			background: yellow;
+		}
+	}
+
+	.navbar__nav {
+		@include column(12);
+	}
+}
