@@ -1,5 +1,68 @@
 
 
+/* ==================================
+
+// General Rules
+
+================================== */
+
 body {
-	background-color: red;
+    margin: 0;
+    font-family: "Avenir Next", "Helvetica Neue";
 }
+
+// Box-sizing
+* {
+ box-sizing: border-box;
+}
+
+// Max-width 
+%max-width-1280 {
+  max-width: 1280px;
+}
+
+// Images
+img {
+    max-width: 100%;
+}
+
+// Clearfix
+%clearfix {
+  &:after {
+     content: "";
+     visibility: hidden;
+     display: block;
+     height: 0;
+     clear: both;
+  }
+}
+
+/* ==================================
+
+// Dynamic Grid rules
+
+================================== */
+
+// Container(s)
+@mixin container {
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+// Row(s)
+@mixin row {
+  margin: 0 -15px;
+    @extend %clearfix;
+}
+
+// Column(s)
+$grid-columns: 12;
+@mixin column( $columns ) {
+  float: left;
+  padding: 0 15px;
+  width: 100%;
+  @media( min-width: 768px ){
+    width: percentage( ($columns/$grid-columns ) );
+  }
+}
+
