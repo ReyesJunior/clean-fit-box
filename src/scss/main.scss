@@ -50,6 +50,22 @@ img {
   }
 }
 
+// Marked-text
+.marked__text {
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+
+	&--blue {
+		color: $theme-light-blue;
+	}
+
+	&--black {
+		color: $theme-black;
+	}
+
+}
+
 /* ==================================
 
 // Dynamic Grid rules
@@ -96,6 +112,8 @@ $grid-columns: 12;
 ================================== */
 
 @import "partials/navbar.scss";
+@import "partials/banner.scss";
+@import "partials/product_outline.scss";
 
 
 
