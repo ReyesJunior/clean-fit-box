@@ -110,6 +110,12 @@ $grid-columns: 12;
 	@include container;
 	@include max-width-wrapper;
 }
+.main-content {
+	@include row;
+}
+section {
+	@include column(12);
+}
 
 /* ==================================
 
@@ -120,6 +126,7 @@ $grid-columns: 12;
 @import "partials/navbar.scss";
 @import "partials/banner.scss";
 @import "partials/product_outline.scss";
+@import "partials/feature_overview.scss";
 
 
 
