@@ -20,11 +20,13 @@
 			background: $theme-light-blue;
 			padding: 25px 15px;
 			margin-top: 0;
+			font-weight: 500;
 			@media( min-width: 768px ) {
 				background: transparent;
 				margin: 45px auto 0;
 				padding: 15px 15px;
 				font-size: 30px;
+				font-weight: bold;
 				color: $theme-light-blue;
 			}
 		}
