@@ -1,0 +1,88 @@
+
+/* ======================================
+
+// feature
+
+====================================== */
+
+.feature {
+	@include row;
+
+	.feature__overview {
+		@include column(12);
+		background: $theme-light-blue;
+
+		&--inner {
+			background: $theme-white;
+			padding: 0 15px;
+			@media( min-width: 768px ) {
+				width: 90%;
+			    margin: -100px auto 100px;
+			    z-index: 2;
+			    position: relative;
+			    padding-bottom: 35px;
+			}
+		}
+
+		&--title {
+			@include row;
+
+		}
+
+		&--header {
+			@include column(12);
+			text-align: center;
+			text-transform: uppercase;
+			background-color: $theme-light-blue;
+			margin: 0 auto 25px;
+			padding: 25px 15px;
+			font-weight: 500;
+			transition: 0.5s;
+			@media( min-width: 768px ) {
+				background-color: $theme-white;
+				margin: 15px auto;
+			}
+		}
+
+		.feature__detail {
+			@include row;
+			@media( min-width: 768px ) {
+				padding: 0 20px 25px;
+			}
+
+
+			&--card {
+				@include column(4);
+				margin: 0 auto;
+				text-align: center;
+				padding: 0 15px 25px;
+				@media( min-width: 768px ) {
+					margin: 0 auto;
+					padding: 0 15px;
+				}
+			}
+
+			&--icon {
+				font-size: 40px;
+				color: $theme-light-blue;
+			}
+
+			&--header {
+				text-transform: uppercase;
+				color: $theme-black;
+			}
+
+			&--underscore {
+				background: $theme-black;
+				width: 45px;
+				border: 1px solid $theme-black;
+			}
+
+			&--body {
+				color: $theme-dark-grey;
+			}
+		
+		} 
+	}
+	
+}
