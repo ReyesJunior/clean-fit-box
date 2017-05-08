@@ -1,0 +1,38 @@
+
+/* ==================================
+
+// Social-Media 
+
+================================== */
+
+.social {
+	@include row;
+	text-align: center;
+	background: $theme-dark-blue;
+
+	.social__connect {
+		@include column(12);
+
+		&--header {
+			padding: 25px 15px;
+			color: $theme-white;
+		}
+	}
+
+	.social__icons {
+		@include column(12);
+		padding-bottom: 45px;
+
+		&--icon {
+			display: inline-block;
+			height: 50px;
+			width: 50px;
+			border-radius: 30%;
+		}
+
+		&--inner {
+			top: 8px;
+			font-size: 28px;
+		}
+	}
+}
