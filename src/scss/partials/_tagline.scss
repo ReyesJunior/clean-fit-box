@@ -12,7 +12,7 @@
 	.tagline__header {
 		@include column(12);
 		text-align: center;
-		padding: 15px;
+		padding: 15px 15px 45px; 
 
 		&--tag {
 			padding: 0 15px;
