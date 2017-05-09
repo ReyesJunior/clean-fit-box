@@ -11,8 +11,8 @@ $theme-black: #000000;
 $theme-light-grey: #EEEEEE;
 $theme-dark-grey: #515151;
 $theme-darkest-grey: #383838;
-$theme-light-blue: #00B4FF;
-$theme-dark-blue: #135d7b;
+$theme-light-blue: #00B4FF; //#00b9c4
+$theme-dark-blue: #0d2e3c; //#135d7b
 
 /* ==================================
 
@@ -129,6 +129,7 @@ section {
 @import "partials/product_outline.scss";
 @import "partials/feature_overview.scss";
 @import "partials/social_media_panel.scss";
+@import "partials/tagline.scss";
 
 
 
