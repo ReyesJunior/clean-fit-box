@@ -65,6 +65,10 @@ img {
 		color: $theme-black;
 	}
 
+	&--white {
+		color: $theme-white;
+	}
+
 }
 
 /* ==================================
@@ -130,6 +134,7 @@ section {
 @import "partials/feature_overview.scss";
 @import "partials/social_media_panel.scss";
 @import "partials/tagline.scss";
+@import "partials/package_outline.scss";
 
 
 
