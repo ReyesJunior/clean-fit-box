@@ -1,0 +1,72 @@
+
+/* ==================================
+
+// Package outline
+
+================================== */
+
+.package {
+	@include row;
+	text-align: center;
+
+	.package__outline {
+		@include column(12);
+		background: $theme-light-blue;
+		@media( min-width: 768px ) {
+			@include column(5);
+		}
+		
+
+		&--header {
+			margin: 0 auto;
+    		padding: 25px 15px 0;
+    		font-weight: 500;
+    		color: $theme-black;
+		}
+
+		&--body {
+			position: relative;
+			padding: 0 15px 25px;
+			color: $theme-black;
+			&:after {
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: -29px;
+				margin-left: auto;
+				margin-right: auto;
+				height: 0;
+				width: 0;
+				content: ' ';
+				border-left: 20px solid transparent;
+				border-top: 15px solid $theme-light-blue;
+				border-bottom: 0px solid transparent;
+				border-right: 20px solid transparent;
+				@media( min-width: 768px ) {
+					right: -30px;
+					top: 0;
+					margin-right: 0;
+					border-left: 15px solid $theme-light-blue;
+				    border-top: 20px solid transparent;
+				    border-bottom: 20px solid transparent;
+				    border-right: 0px solid transparent;
+				}
+			}
+		}
+	}
+
+	.package__action {
+		@include column(12);
+		@media( min-width: 768px ) {
+			@include column(7);
+		}
+
+		&--body {
+			padding: 45px 15px;
+		    color: $theme-dark-grey;
+		    @media( min-width: 768px ) {
+		    	padding: 50px 15px 15px;
+		    }
+		}
+	}
+}
