@@ -102,7 +102,7 @@ $grid-columns: 12;
 
 // Max-width-wrapper
 @mixin max-width-wrapper {
-	max-width: 1280px;
+	max-width: 1440px;
 }
 
 /* ==================================
@@ -135,6 +135,7 @@ section {
 @import "partials/social_media_panel.scss";
 @import "partials/tagline.scss";
 @import "partials/package_outline.scss";
+@import "partials/subscription_grid.scss";
 
 
 
