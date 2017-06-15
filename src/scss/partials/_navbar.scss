@@ -8,12 +8,10 @@
 .navbar {
 	@include row;
 	height: 50px;
-	background: $theme-light-blue;
+	background: $theme-white;
 	overflow: hidden;
-	transition: .5s;
 	@media( min-width: 768px ) {
 		display: flex;
-		background: $theme-white;
 	}
 
 	&.height-fixed {
