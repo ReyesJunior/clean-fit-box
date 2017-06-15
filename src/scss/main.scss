@@ -20,38 +20,29 @@ $theme-dark-blue: #0d2e3c; //#135d7b
 
 ================================== */
 
-body {
-    margin: 0;
-    font-family: "Avenir Next", "Helvetica Neue";
-}
-
-// Box-sizing
 * {
- box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-// Max-width 
-%max-width-1280 {
-  max-width: 1280px;
+body {
+  margin: 0;
+  font-family: "Avenir Next", "Helvetica Neue";
 }
 
-// Images
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
-// Clearfix
 %clearfix {
   &:after {
-     content: "";
-     visibility: hidden;
-     display: block;
-     height: 0;
-     clear: both;
+      content: "";
+      visibility: hidden;
+      display: block;
+      height: 0;
+      clear: both;
   }
 }
 
-// Marked-text
 .marked__text {
 	text-transform: uppercase;
 	font-weight: 700;
@@ -68,7 +59,6 @@ img {
 	&--white {
 		color: $theme-white;
 	}
-
 }
 
 /* ==================================
@@ -100,9 +90,9 @@ $grid-columns: 12;
   }
 }
 
-// Max-width-wrapper
-@mixin max-width-wrapper {
-	max-width: 1440px;
+// Inner-row-width
+.inner-row-width {
+  max-width: 1440px;
 }
 
 /* ==================================
@@ -113,7 +103,6 @@ $grid-columns: 12;
 
 .page-container {
 	@include container;
-	@include max-width-wrapper;
 }
 .main-content {
 	@include row;
