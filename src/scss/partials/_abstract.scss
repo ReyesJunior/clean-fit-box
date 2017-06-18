@@ -8,17 +8,76 @@
 .abstract {
 	@include row;
 
-	&__hero {
+	.abstract__inner {
 		@include column(12);
+	}
+
+	.abstract__banner {
+		@include row;
+		position: relative;
 		@media( min-width: 768px ) {
-			@include column(6);
+			float: right;
+			width: 50%;
+		}
+
+		&--image {
+			@include column(12);
+		}
+
+		&--overlay {
+			@include column(12);
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			text-align: center;
+			background: rgba( 255, 255, 255, 0.5 );
 		}
 	}
 
-	&__outline {
-		@include column(12);
+	.abstract__outline {
+		@include row;
 		@media( min-width: 768px ) {
-			@include column(6);
+			float: left;
+			width: 50%;
+		}
+
+		&--title{
+			@include column(12);
+			text-align: center;
+		}
+
+		&--header {
+			padding: 0 15px;
+		}
+
+		.abstract__button {
+			@include column(12);
+			text-align: center;
+
+			&--cta {
+				display: block;
+			    max-width: 200px;
+			    margin: 0 auto 25px;
+			    padding: 15px 10px;
+			    font-size: 24px;
+				font-weight: 700;
+				color: $theme-white;
+				text-decoration: none;
+				background-color: $theme-light-blue;
+				transition: 0.2s;
+				&:hover {
+					color: $theme-light-blue;
+					background-color: $theme-white;
+					border: 1px solid $theme-light-blue;
+					transition: 0.2s;
+				}
+			}
 		}
 	}
 }
+
+
+
+
