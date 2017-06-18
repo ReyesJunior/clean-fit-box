@@ -80,9 +80,11 @@
 			padding-top: 13px;
 			text-decoration: none;
 			color: $theme-light-blue;
+			transition: 0.2s;
 			&:hover {
 				background: $theme-light-blue;
 				color: $theme-white;
+				transition: 0.2s;
 			}
 		}
 	}
