@@ -43,18 +43,26 @@
 	.abstract__outline {
 		@include row;
 		@media( min-width: 768px ) {
+			position: relative;
 			float: left;
 			width: 50%;
 			margin: 0;
+		}
+		@media( min-width: 850px ) {
+			// position: relative;
 		}
 
 		&--title{
 			@include column(12);
 			text-align: center;
+			@media( min-width: 768px ) {
+				position: relative;
+				margin-top: 10%;
+			}
 		}
 
 		&--header {
-			padding: 25px 15px 0;
+			padding: 0 15px;
 		}
 
 		.abstract__button {
