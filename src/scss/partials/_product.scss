@@ -11,11 +11,15 @@
 
 	.product__pros {
 		@include column(12);
+		padding-top: 10px;
+    	padding-bottom: 25px;
 		text-align: center;
 		background: $theme-white;
 		@media( min-width: 768px ) {
 			@include column(6);
 			text-align: left;
+			padding-top: 10px;
+    		padding-bottom: 25px;
 		}
 
 		&--header {
@@ -48,9 +52,13 @@
 
 	.product__cons {
 		@include column(12);
+		padding-top: 10px;
+	    padding-bottom: 25px;
 		text-align: center;
 		@media( min-width: 768px ) {
 			@include column(6);
+			padding-top: 10px;
+    		padding-bottom: 25px;
 		}
 
 		&--header {
