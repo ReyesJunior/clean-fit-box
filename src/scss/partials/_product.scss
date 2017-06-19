@@ -7,14 +7,12 @@
 
 .product {
 	@include row;
-	background: $theme-light-blue;
 
 	.product__pros {
 		@include column(12);
 		padding-top: 10px;
     	padding-bottom: 25px;
 		text-align: center;
-		background: $theme-white;
 		@media( min-width: 768px ) {
 			@include column(6);
 			text-align: left;
@@ -55,6 +53,7 @@
 		padding-top: 10px;
 	    padding-bottom: 25px;
 		text-align: center;
+		background: $theme-light-blue;
 		@media( min-width: 768px ) {
 			@include column(6);
 			padding-top: 10px;
@@ -75,7 +74,7 @@
 			margin: 0 auto;
 			padding: 0 15px;
 			@media( min-width: 768px ) {
-				margin-top: 20px;
+				margin-top: 25px;
 			}
 		}
 
