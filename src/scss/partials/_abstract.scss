@@ -18,10 +18,14 @@
 		@media( min-width: 768px ) {
 			float: right;
 			width: 50%;
+			margin: 0;
 		}
 
 		&--image {
 			@include column(12);
+			@media( min-width: 768px ) {
+				padding: 0;
+			}
 		}
 
 		&--overlay {
@@ -41,6 +45,7 @@
 		@media( min-width: 768px ) {
 			float: left;
 			width: 50%;
+			margin: 0;
 		}
 
 		&--title{
@@ -49,7 +54,7 @@
 		}
 
 		&--header {
-			padding: 0 15px;
+			padding: 25px 15px 0;
 		}
 
 		.abstract__button {
