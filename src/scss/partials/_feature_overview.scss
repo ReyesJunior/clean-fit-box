@@ -84,10 +84,8 @@
 
 			&--body {
 				color: $theme-dark-grey;
-				@media( min-width: 768px ) {
-					margin: 15px auto;
-    				max-width: 400px;
-				}
+				margin: 15px auto;
+    			max-width: 400px;
 			}
 		
 		} 
