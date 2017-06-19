@@ -1,5 +1,4 @@
 
-
 /* ==================================
 
 // Theme Styles
@@ -35,11 +34,11 @@ img {
 
 %clearfix {
   &:after {
-      content: "";
-      visibility: hidden;
-      display: block;
-      height: 0;
-      clear: both;
+    content: "";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
   }
 }
 
@@ -69,8 +68,8 @@ img {
 
 // Container(s)
 @mixin container {
-    margin: 0 auto;
-    overflow-x: hidden;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 // Row(s)
@@ -94,7 +93,7 @@ $grid-columns: 12;
 .inner-row-width {
   margin: 0 auto;
   padding: 0;
-  max-width: 1440px;
+  max-width: 1240px;
 }
 
 /* ==================================
