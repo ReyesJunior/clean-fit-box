@@ -10,15 +10,44 @@
 
 	.product__pros {
 		@include column(12);
+		text-align: center;
 		@media( min-width: 768px ) {
 			@include column(6);
+			text-align: left;
+		}
+
+		&--header {
+			text-align: center;
+		}
+
+		&--subheader {
+			padding: 0 15px;
+			text-align: center;
+		}
+
+		&--list {
+			max-width: 350px;
+			margin: 0 auto;
+			padding: 0 15px;
+		}
+
+		&--listing {
+			list-style: none;
+			text-align: left;
+		}
+
+		&--body {
+			text-align: left;
 		}
 	}
 
 	.product__cons {
 		@include column(12);
+		text-align: center;
+		background: $theme-light-blue;
 		@media( min-width: 768px ) {
 			@include column(6);
+			padding-bottom: 20px;
 		}
 	}
 }
