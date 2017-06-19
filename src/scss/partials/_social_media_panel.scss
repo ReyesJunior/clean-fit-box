@@ -8,32 +8,34 @@
 .social {
 	@include row;
 	text-align: center;
-	background: $theme-light-blue;
 
-	.social__connect {
+	.social__inner {
 		@include column(12);
+		background-color: $theme-light-blue;
+	
+		.social__connect {
 
-		&--header {
-			padding: 15px;
-			color: $theme-white;
-			font-weight: 500;
-		}
-	}
-
-	.social__icons {
-		@include column(12);
-		padding-bottom: 15px;
-
-		&--icon {
-			display: inline-block;
-			height: 50px;
-			width: 50px;
-			border-radius: 30%;
+			&--header {
+				padding: 15px;
+				color: $theme-white;
+				font-weight: 500;
+			}
 		}
 
-		&--inner {
-			top: 8px;
-			font-size: 28px;
+		.social__icons {
+			padding-bottom: 15px;
+
+			&--icon {
+				display: inline-block;
+				height: 50px;
+				width: 50px;
+				border-radius: 30%;
+			}
+
+			&--inner {
+				top: 8px;
+				font-size: 28px;
+			}
 		}
 	}
 }
