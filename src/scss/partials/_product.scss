@@ -25,6 +25,9 @@
 		&--subheader {
 			padding: 0 15px;
 			text-align: center;
+			@media( min-width: 768px ) {
+				margin: 0 auto 10px;
+			}
 		}
 
 		&--list {
@@ -48,6 +51,36 @@
 		text-align: center;
 		@media( min-width: 768px ) {
 			@include column(6);
+		}
+
+		&--header {
+			text-align: center;
+		}
+
+		&--subheader {
+			padding: 0 15px;
+			text-align: center;
+		}
+
+		&--list {
+			max-width: 350px;
+			margin: 0 auto;
+			padding: 0 15px;
+			@media( min-width: 768px ) {
+				margin-top: 20px;
+			}
+		}
+
+		&--listing {
+			list-style: none;
+			text-align: left;
+		}
+
+		&--body {
+			text-align: left;
+			@media( min-width: 768px ) {
+				margin-top: 20px;
+			}
 		}
 	}
 }
