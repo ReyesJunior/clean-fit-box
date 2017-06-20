@@ -5,7 +5,7 @@
 
 ================================== */
 
-.subscription {
+.grid {
 	@include row;
 	background: $theme-white;
 
@@ -24,13 +24,34 @@
 			@include column(12);
 			text-align: center;
 			text-transform: uppercase;
+			background-color: $theme-light-blue;
 			color: $theme-black;
+			margin: 0 auto 45px;
 			padding: 25px 15px;
 			font-weight: 500;
 			transition: 0.5s;
 			@media( min-width: 768px ) {
-				margin-top: 25px;
+				background-color: $theme-white;
+				margin: 15px auto;
 			}
+		}
+
+		&--shipping {
+			@include row;
+			color: $theme-black;
+		}
+
+		&--options {
+			@include column(12);
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		&--free {
+			@include column(12);
+			font-style: italic;
+			margin-bottom: 25px;
+			text-align: center;
 		}
 
 		.pricing__grid {
@@ -53,28 +74,34 @@
 			}
 
 			&--card--inner {
-				background: $theme-light-blue;
+				background: $theme-dark-grey;
     			padding: 15px;
+				max-width: 400px;
+				margin: 0 auto;
 			}
 
 			&--month {
 				text-transform: uppercase;
-				color: $theme-black;
+				color: $theme-white;
 				margin-bottom: 15px;
 			}
 
 			&--underscore {
 				width: 100px;
 				margin-top: 0;
-				border-top: 1px solid $theme-dark-grey;
+				border-top: 1px solid $theme-white;
 			}
 
 			&--price {
-				color: $theme-dark-grey;
+				color: $theme-white;
 			}
 
 			&--discount {
-				color: $theme-dark-grey;
+				color: $theme-white;
+			}
+
+			#invisible {
+				visibility: hidden;
 			}
 
 		}
