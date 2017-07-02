@@ -10,14 +10,16 @@
 
 	.abstract__inner {
 		@include column(12);
+		// for abstract_outine overlap
+		@media( min-width: 768px ) {
+			position: relative;
+		}
 	}
 
 	.abstract__banner {
 		@include row;
 		position: relative;
 		@media( min-width: 768px ) {
-			float: right;
-			width: 50%;
 			margin: 0;
 		}
 
@@ -42,22 +44,23 @@
 
 	.abstract__outline {
 		@include row;
+		// for abstract_outine overlap
 		@media( min-width: 768px ) {
-			position: relative;
-			float: left;
-			width: 50%;
-			margin: 0;
-		}
-		@media( min-width: 850px ) {
-			// position: relative;
+			position: absolute;
+			margin: auto;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
 		}
 
 		&--title{
 			@include column(12);
 			text-align: center;
+			// for abstract_outine overlap
 			@media( min-width: 768px ) {
 				position: relative;
-				margin-top: 10%;
+				margin-top: 20%;
 			}
 		}
 
