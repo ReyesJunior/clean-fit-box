@@ -1,4 +1,9 @@
 /* ==================================
+=====// Base Utilities //===== */
+
+@import "utilities/base.utilities.scss";
+
+/* ==================================
 =====// Base Objects //===== */
 
 @import "objects/base.objects.scss";
@@ -6,12 +11,7 @@
 /* ==================================
 =====// Base Components //===== */
 
-@import "objects/base.components.scss";
-
-/* ==================================
-=====// Base Utilities //===== */
-
-@import "objects/base.utilities.scss";
+@import "components/base.components.scss";
 
 /* ==================================
 =====// Partials //===== */
