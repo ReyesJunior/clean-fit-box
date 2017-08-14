@@ -1,122 +1,20 @@
+/* ==================================
+=====// Base Objects //===== */
+
+@import "objects/base.objects.scss";
 
 /* ==================================
+=====// Base Components //===== */
 
-// Theme Styles
-
-================================== */
-
-$theme-white: #FFFFFF;
-$theme-black: #000000;
-$theme-light-grey: #EEEEEE;
-$theme-dark-grey: #515151;
-$theme-darkest-grey: #383838;
-$theme-light-blue: #00B4FF; //#00b9c4
-$theme-dark-blue: #0d2e3c; //#135d7b
+@import "objects/base.components.scss";
 
 /* ==================================
+=====// Base Utilities //===== */
 
-// General Rules
-
-================================== */
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: "Avenir Next", "Helvetica Neue";
-}
-
-img {
-  max-width: 100%;
-}
-
-%clearfix {
-  &:after {
-    content: "";
-    visibility: hidden;
-    display: block;
-    height: 0;
-    clear: both;
-  }
-}
-
-.marked__text {
-	text-transform: uppercase;
-	font-weight: 700;
-	letter-spacing: 2px;
-
-	&--blue {
-		color: $theme-light-blue;
-	}
-
-	&--black {
-		color: $theme-black;
-	}
-
-	&--white {
-		color: $theme-white;
-	}
-}
+@import "objects/base.utilities.scss";
 
 /* ==================================
-
-// Dynamic Grid rules
-
-================================== */
-
-// Container(s)
-@mixin container {
-  margin: 0 auto;
-  overflow-x: hidden;
-}
-
-// Row(s)
-@mixin row {
-  margin: 0 -15px;
-    @extend %clearfix;
-}
-
-// Column(s)
-$grid-columns: 12;
-@mixin column( $columns ) {
-  float: left;
-  padding: 0 15px;
-  width: 100%;
-  @media( min-width: 768px ){
-    width: percentage( ($columns/$grid-columns ) );
-  }
-}
-
-// Inner-row-width
-.inner-row-width {
-  margin: 0 auto;
-  padding: 0;
-  max-width: 1240px;
-}
-
-/* ==================================
-
-// page-setup
-
-================================== */
-
-.page-container {
-	@include container;
-}
-.main-content {
-	@include row;
-}
-section {
-	@include column(12);
-}
-
-/* ==================================
-
-// Imports
-
-================================== */
+=====// Partials //===== */
 
 @import "partials/navbar.scss";
 @import "partials/banner.scss";
@@ -134,9 +32,6 @@ section {
 // @import "partials/product_outline.scss";
 // @import "partials/tagline.scss";
 // @import "partials/package_outline.scss";
-
-
-
 
 
 

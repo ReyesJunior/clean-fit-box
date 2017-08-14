@@ -1,0 +1,93 @@
+/* ==================================
+
+// Base Utilities
+
+================================== */
+
+/* ==================================
+=====// Theme Color //===== */
+
+$theme-white: #FFFFFF;
+$theme-black: #000000;
+$theme-light-grey: #EEEEEE;
+$theme-dark-grey: #515151;
+$theme-darkest-grey: #383838;
+$theme-light-blue: #00B4FF; //#00b9c4
+$theme-dark-blue: #0d2e3c; //#135d7b
+
+/* ==================================
+=====// Base //===== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Avenir Next", "Helvetica Neue";
+}
+
+img {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+%clearfix {
+  &:after {
+    content: "";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+  }
+}
+
+/* ==================================
+=====// Dynamic Grid //===== */
+
+@mixin container {
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+@mixin row {
+  margin: 0 -15px;
+    @extend %clearfix;
+}
+
+@mixin column( $columns ) {
+  float: left;
+  padding: 0 15px;
+  width: 100%;
+		@media( min-width: 768px ){
+			width: percentage( ($columns/$grid-columns ) );
+		}
+}
+
+.inner-row-width {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1240px;
+}
+
+/* ==================================
+=====// Set-up //===== */
+
+.page-container {
+	@include container;
+}
+.main-content {
+	@include row;
+}
+section {
+	@include column(12);
+}
+
+/* ==================================
+=====// Utility Overrides //===== */
+
+
+
+

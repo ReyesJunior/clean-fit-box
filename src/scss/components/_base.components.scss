@@ -1,0 +1,23 @@
+/* ==================================
+
+// Base Components
+
+================================== */
+
+.marked__text {
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+
+	&--blue {
+		color: $theme-light-blue;
+	}
+
+	&--black {
+		color: $theme-black;
+	}
+
+	&--white {
+		color: $theme-white;
+	}
+}
