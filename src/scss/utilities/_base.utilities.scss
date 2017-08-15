@@ -4,20 +4,6 @@
 
 ================================== */
 
-/* ==================================
-=====// Theme Color //===== */
-
-$theme-white: #FFFFFF;
-$theme-black: #000000;
-$theme-light-grey: #EEEEEE;
-$theme-dark-grey: #515151;
-$theme-darkest-grey: #383838;
-$theme-light-blue: #00B4FF; //#00b9c4
-$theme-dark-blue: #0d2e3c; //#135d7b
-
-/* ==================================
-=====// Base //===== */
-
 * {
   box-sizing: border-box;
 }
@@ -44,10 +30,32 @@ img {
 }
 
 /* ==================================
+=====// Theme Color //===== */
+
+$theme-white: #FFFFFF;
+$theme-black: #000000;
+$theme-light-grey: #EEEEEE;
+$theme-dark-grey: #515151;
+$theme-darkest-grey: #383838;
+$theme-light-blue: #00B4FF; //#00b9c4
+$theme-dark-blue: #0d2e3c; //#135d7b
+
+/* ==================================
 =====// Dynamic Grid //===== */
 
+$grid-columns: 12;
+
 @mixin container {
+	position: relative;
   margin: 0 auto;
+  padding: 0 15px;
+  overflow-x: hidden;
+}
+
+@mixin container--no-padding {
+	position: relative;
+  margin: 0 auto;
+  padding: 0;
   overflow-x: hidden;
 }
 
@@ -55,8 +63,6 @@ img {
   margin: 0 -15px;
     @extend %clearfix;
 }
-
-$grid-columns: 12;
 
 @mixin column( $columns ) {
   float: left;
@@ -67,23 +73,22 @@ $grid-columns: 12;
 		}
 }
 
-.inner-row-width {
-  margin: 0 auto;
+@mixin column--no-padding( $columns ) {
+  float: left;
   padding: 0;
-  max-width: 1240px;
+  width: 100%;
+		@media( min-width: 768px ){
+			width: percentage( ($columns/$grid-columns ) );
+		}
 }
 
 /* ==================================
 =====// Set-up //===== */
 
-.page-container {
-	@include container;
-}
-.main-content {
-	@include row;
-}
-section {
-	@include column(12);
+.inner-row-width {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1240px;
 }
 
 /* ==================================
