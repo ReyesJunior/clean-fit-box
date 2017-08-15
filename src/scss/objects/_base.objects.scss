@@ -3,3 +3,11 @@
 // Base Objects
 
 ================================== */
+
+.o-container {
+	@include container;
+}
+
+.o-container--no-padding {
+	@include container--no-padding;
+}

@@ -85,12 +85,6 @@ $grid-columns: 12;
 /* ==================================
 =====// Set-up //===== */
 
-.inner-row-width {
-  margin: 0 auto;
-  padding: 0;
-  max-width: 1240px;
-}
-
 .marked__text {
 	text-transform: uppercase;
 	font-weight: 700;
@@ -111,6 +105,21 @@ $grid-columns: 12;
 
 /* ==================================
 =====// Utility Overrides //===== */
+
+.u-max-width--xl {
+	margin-left: auto !important;
+	margin-right: auto !important;
+ 	max-width: 1440px !important;
+}
+
+
+
+
+
+
+
+
+
 
 
 
