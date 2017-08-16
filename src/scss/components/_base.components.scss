@@ -5,12 +5,12 @@
 ================================== */
 
 /* ==================================
-=====// Header //===== */
+=====// c-header //===== */
 
 .c-header {
 	@include row;
 
-	.c-header__navbar {
+	&__navbar {
 		height: 50px;
 		background: $theme-white;
 		transition: 0.2s;
@@ -30,7 +30,7 @@
 		}
 	}
 
-	.c-header__icons {
+	&__icons {
 		@include column(12);
 		display: flex;
 		height: 50px;
@@ -55,8 +55,8 @@
 			}
 		}
 	}
-	
-	.c-header__nav {
+
+	&__nav {
 		@include column(12);
 		display: flex;
 		width: 100%;
@@ -99,4 +99,101 @@
 		}
 	}
 }
+
+/* ==================================
+=====// c-banner //===== */
+
+.c-banner {
+	@include row;
+
+	.c-banner__group {
+		// for overlap
+		@media( min-width: 768px ) {
+			position: relative;
+		}
+	}
+
+	.c-banner__hero {
+		@include column(12);
+		position: relative;
+	}
+
+	.c-banner__hero--overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		text-align: center;
+		background: rgba( 255, 255, 255, 0.5 );
+
+		&--header {
+			color: $theme-black;
+			margin: 15% auto 0;
+			transition: 0.5s;
+			font-weight: 500;
+			padding: 0 15px;
+			@media( min-width: 768px ) {
+				color: $theme-light-blue;
+				margin-top: 20%;
+			}
+		}
+
+		&--body {
+			padding: 0 15px;
+			color: $theme-black;
+		}
+
+	}
+
+	.c-banner__headline {
+		@include column(12);
+		// for overlap
+		@media( min-width: 768px ) {
+			position: absolute;
+			margin: auto;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+
+		&--title{
+			text-align: center;
+			// for overlap
+			@media( min-width: 768px ) {
+				margin-top: 20%;
+			}
+		}
+
+		&--button {
+			text-align: center;
+
+			&--cta {
+				display: block;
+		    max-width: 200px;
+		    margin: 0 auto 25px;
+		    padding: 15px 10px;
+		    font-size: 24px;
+				font-weight: 700;
+				color: $theme-white;
+				text-decoration: none;
+				background-color: $theme-light-blue;
+				transition: 0.2s;
+				&:hover {
+					color: $theme-light-blue;
+					background-color: $theme-white;
+					border: 1px solid $theme-light-blue;
+					transition: 0.2s;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
 
