@@ -61,25 +61,25 @@ $grid-columns: 12;
 
 @mixin row {
   margin: 0 -15px;
-    @extend %clearfix;
+  @extend %clearfix;
 }
 
 @mixin column( $columns ) {
   float: left;
   padding: 0 15px;
   width: 100%;
-		@media( min-width: 768px ){
-			width: percentage( ($columns/$grid-columns ) );
-		}
+	@media( min-width: 768px ){
+		width: percentage( ($columns/$grid-columns ) );
+	}
 }
 
 @mixin column--no-padding( $columns ) {
   float: left;
   padding: 0;
   width: 100%;
-		@media( min-width: 768px ){
-			width: percentage( ($columns/$grid-columns ) );
-		}
+	@media( min-width: 768px ){
+		width: percentage( ($columns/$grid-columns ) );
+	}
 }
 
 /* ==================================
