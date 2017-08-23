@@ -327,7 +327,7 @@
 			@include column(4);
 			margin: 0 auto 25px;
 			text-align: center;
-			padding: 0 15px 25px;
+			padding: 0 25px 25px;
 			@media( min-width: 768px ) {
 				margin: 0 auto;
 				padding: 0 15px;
@@ -423,6 +423,7 @@
 
 		&--group {
 			@include row;
+			margin: 0 auto;
 		}
 	}
 
@@ -497,4 +498,108 @@
 		}
 	}
 }
+
+/* ==================================
+=====// c-packages //===== */
+
+.c-packages {
+	@include row;
+
+	&__title {
+		@include column(12);
+		text-align: center;
+		text-transform: uppercase;
+		background-color: $theme-light-blue;
+		color: $theme-black;
+		margin: 0 auto 45px;
+		padding: 25px 15px;
+		font-weight: 500;
+		transition: 0.5s;
+		@media( min-width: 768px ) {
+			background-color: $theme-white;
+			margin: 15px auto;
+		}
+	}
+
+	&__type {
+		@include column(12);
+		
+		&--group {
+			@include row;
+		}
+	}
+
+	&__card {
+		@include column(4);
+		margin: 0 auto 25px;
+		text-align: center;
+		padding: 0 15px 25px;
+		@media( min-width: 768px ) {
+			margin: 0 auto;
+			padding: 0 15px;
+		}
+
+		&--box {
+			display: block;
+	    background: $theme-light-blue;
+	    color: $theme-white;
+	    font-size: 24px;
+			font-weight: 700;
+	    padding: 25px;
+	    width: 200px;
+	    text-decoration: none;
+	    margin: 0 auto;
+	    transition: 0.2s;
+			border-style: inset;
+			border-color: $theme-black;
+		  &:hover {
+				color: $theme-light-blue;
+				background-color: $theme-white;
+				border: 1px solid $theme-light-blue;
+				transition: 0.2s;
+	    }
+		}
+	}
+
+	&__inquiry {
+		@include column(12);
+		@media( min-width: 768px ) {
+			margin-bottom: 50px;
+			padding: 0 15px;
+		}
+		
+		&--message {
+			@include column(12);
+			margin-top: 50px;
+			padding: 0 25px;
+			text-align: center;
+		}
+
+		&--email {
+			@include column(12);
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		.contact-email {
+			display: inline-block;
+			padding: 0;
+			margin-bottom: 25px;
+			text-align: center;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
