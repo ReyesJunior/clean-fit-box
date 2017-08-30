@@ -197,11 +197,11 @@
     	padding-bottom: 25px;
 		}
 
-		&--header {
+		&--title {
 			text-align: center;
 		}
 
-		&--subheader {
+		&--caption {
 			padding: 0 15px;
 			text-align: center;
 			@media( min-width: 768px ) {
@@ -220,7 +220,7 @@
 			text-align: left;
 		}
 
-		&--body {
+		&--cta {
 			text-align: left;
 		}
 	}
@@ -237,11 +237,11 @@
     	padding-bottom: 25px;
 		}
 
-		&--header {
+		&--title {
 			text-align: center;
 		}
 
-		&--subheader {
+		&--caption {
 			padding: 0 15px;
 			text-align: center;
 		}
@@ -260,7 +260,7 @@
 			text-align: left;
 		}
 
-		&--body {
+		&--cta {
 			text-align: left;
 			@media( min-width: 768px ) {
 				margin-top: 20px;
