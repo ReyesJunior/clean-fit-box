@@ -465,41 +465,6 @@
 }
 
 /* ==================================
-=====// c-footer //===== */
-
-.c-footer {
-	@include row;
-	text-align: center;
-
-	&__media {
-		background-color: $theme-light-blue;
-
-		&--title {
-			@include column(12);
-			padding: 15px;
-			color: $theme-white;
-			font-weight: 500;
-		}
-	}
-
-	&__socials {
-		padding-bottom: 15px;
-
-		&--icon {
-			display: inline-block;
-			height: 50px;
-			width: 50px;
-			border-radius: 30%;
-
-			&-inner {
-				top: 8px !important;
-				font-size: 28px !important;
-			}
-		}
-	}
-}
-
-/* ==================================
 =====// c-packages //===== */
 
 .c-packages {
@@ -590,6 +555,40 @@
 	}
 }
 
+/* ==================================
+=====// c-footer //===== */
+
+.c-footer {
+	@include row;
+	text-align: center;
+
+	&__media {
+		background-color: $theme-light-blue;
+
+		&--title {
+			@include column(12);
+			padding: 15px;
+			color: $theme-white;
+			font-weight: 500;
+		}
+	}
+
+	&__socials {
+		padding-bottom: 15px;
+
+		&--icon {
+			display: inline-block;
+			height: 50px;
+			width: 50px;
+			border-radius: 30%;
+
+			&-inner {
+				top: 8px !important;
+				font-size: 28px !important;
+			}
+		}
+	}
+}
 
 
 
