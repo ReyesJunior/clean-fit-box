@@ -220,7 +220,7 @@
 		}
 
 		&--cta {
-			text-align: left;
+			text-align: center;
 		}
 	}
 
@@ -435,7 +435,7 @@
 
 		&--inner {
 			background: $theme-dark-grey;
-  		padding: 15px;
+  			padding: 15px;
 			max-width: 400px;
 			margin: 0 auto;
 		}
@@ -458,6 +458,7 @@
 
 		&--discount {
 			color: $theme-white;
+			font-style: italic;
 		}
 	}
 }
