@@ -188,13 +188,13 @@
 	&__includes {
 		@include column(12);
 		padding-top: 10px;
-    padding-bottom: 25px;
+    	padding-bottom: 25px;
 		text-align: center;
 		@media( min-width: 768px ) {
 			@include column(6);
 			text-align: left;
 			padding-top: 10px;
-    	padding-bottom: 25px;
+    		padding-bottom: 25px;
 		}
 
 		&--title {
@@ -227,13 +227,13 @@
 	&__excludes {
 		@include column(12);
 		padding-top: 10px;
-	  padding-bottom: 25px;
+	  	padding-bottom: 25px;
 		text-align: center;
 		background: $theme-light-blue;
 		@media( min-width: 768px ) {
 			@include column(6);
 			padding-top: 10px;
-    	padding-bottom: 25px;
+    		padding-bottom: 25px;
 		}
 
 		&--title {
@@ -505,23 +505,23 @@
 
 		&--box {
 			display: block;
-	    background: $theme-light-blue;
-	    color: $theme-white;
-	    font-size: 24px;
+			background: $theme-light-blue;
+			color: $theme-white;
+			font-size: 24px;
 			font-weight: 700;
-	    padding: 25px;
-	    width: 200px;
-	    text-decoration: none;
-	    margin: 0 auto;
-	    transition: 0.2s;
+			padding: 15px;
+			width: 200px;
+			text-decoration: none;
+			margin: 0 auto;
+			transition: 0.2s;
 			border-style: inset;
 			border-color: $theme-black;
-		  &:hover {
+		  	&:hover {
 				color: $theme-light-blue;
 				background-color: $theme-white;
 				border: 1px solid $theme-light-blue;
 				transition: 0.2s;
-	    }
+	    	}
 		}
 	}
 
@@ -531,17 +531,25 @@
 			margin-bottom: 50px;
 			padding: 0 15px;
 		}
+
+		&--message:first-of-type() {
+			margin-top: 50px;
+		}
 		
 		&--message {
 			@include column(12);
-			margin-top: 50px;
-			padding: 0 25px;
 			text-align: center;
 		}
 
 		&--email {
 			@include column(12);
 			margin: 0 auto;
+			text-align: center;
+		}
+
+		&--link {
+			padding: 0;
+			margin-bottom: 25px;
 			text-align: center;
 		}
 
@@ -552,6 +560,47 @@
 			text-align: center;
 		}
 	}
+}
+
+/* ==================================
+=====// c-provisions //===== */
+
+.c-provisions {
+	@include row;
+	text-align: center;
+
+	&__intro {
+		@include column(12);
+	}
+	&__copy {
+		@include column(12);
+	}
+	&__list {
+		@include column(12);
+
+		&--group {
+			@include row;
+		}
+
+		&--title {
+			@include column(12);
+		}
+		&--list {
+			@include column(12);
+		}
+		&--listing {
+			text-align: left;
+			max-width: 350px;
+			margin: 0 auto;
+			padding: 0 15px;
+		}
+		&--caption {
+			@include column(12);
+		}
+	}
+}
+.c-provisions:last-of-type() {
+	margin-bottom: 50px;
 }
 
 /* ==================================
