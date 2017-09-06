@@ -15,7 +15,6 @@
 		background: $theme-white;
 		transition: 0.2s;
 		overflow: hidden;
-
 		@media( min-width: 768px ) {
 			display: flex;
 		}
@@ -201,26 +200,15 @@
 			text-align: center;
 		}
 
-		&--caption {
-			padding: 0 15px;
-			@media( min-width: 768px ) {
-				margin: 0 auto 10px;
-			}
-		}
-
 		&--list {
-			max-width: 350px;
+			max-width: 85%;
 			margin: 0 auto;
 			padding: 0 15px;
+			text-align: left;
 		}
 
 		&--listing {
 			list-style: none;
-			text-align: left;
-		}
-
-		&--cta {
-			text-align: center;
 		}
 	}
 
@@ -240,14 +228,11 @@
 			text-align: center;
 		}
 
-		&--caption {
-			padding: 0 15px;
-		}
-
 		&--list {
-			max-width: 350px;
+			max-width: 85%;
 			margin: 0 auto;
 			padding: 0 15px;
+			text-align: left;
 			@media( min-width: 768px ) {
 				margin-top: 25px;
 			}
@@ -255,14 +240,6 @@
 
 		&--listing {
 			list-style: none;
-			text-align: left;
-		}
-
-		&--cta {
-			text-align: left;
-			@media( min-width: 768px ) {
-				margin-top: 20px;
-			}
 		}
 	}
 }
@@ -571,6 +548,13 @@
 
 	&__intro {
 		@include column(12);
+		text-align: center;
+		text-transform: uppercase;
+		background-color: $theme-light-blue;
+		color: $theme-black;
+		padding: 25px 15px;
+		font-weight: 500;
+		transition: 0.5s;
 	}
 	&__copy {
 		@include column(12);
