@@ -537,36 +537,6 @@
 	    	}
 		}
 	}
-
-	&__inquiry {
-		@include column(12);
-		@media( min-width: 768px ) {
-			margin-bottom: 50px;
-			padding: 0 15px;
-		}
-
-		&--message:first-of-type() {
-			margin-top: 50px;
-		}
-		
-		&--message {
-			@include column(12);
-			text-align: center;
-		}
-
-		&--link {
-			padding: 0;
-			margin-bottom: 25px;
-			text-align: center;
-		}
-
-		.contact-email {
-			display: inline-block;
-			padding: 0;
-			margin-bottom: 25px;
-			text-align: center;
-		}
-	}
 }
 
 /* ==================================
