@@ -196,13 +196,12 @@
 	&__includes {
 		@include column(12);
 		padding-top: 10px;
-    	padding-bottom: 25px;
+    padding-bottom: 25px;
 		text-align: center;
 		@media( min-width: 768px ) {
-			@include column(6);
 			text-align: left;
 			padding-top: 10px;
-    		padding-bottom: 25px;
+    	padding-bottom: 25px;
 		}
 
 		&--title {
@@ -224,13 +223,11 @@
 	&__excludes {
 		@include column(12);
 		padding-top: 10px;
-	  	padding-bottom: 25px;
+	  padding-bottom: 25px;
 		text-align: center;
-		background: $theme-light-blue;
 		@media( min-width: 768px ) {
-			@include column(6);
 			padding-top: 10px;
-    		padding-bottom: 25px;
+    	padding-bottom: 25px;
 		}
 
 		&--title {
@@ -242,9 +239,6 @@
 			margin: 0 auto;
 			padding: 0 15px;
 			text-align: left;
-			@media( min-width: 768px ) {
-				margin-top: 25px;
-			}
 		}
 
 		&--listing {
@@ -273,6 +267,28 @@
 			@media( min-width: 768px ) {
 				width: 90%;
 		    margin: -50px auto 50px;
+		    z-index: 2;
+		    position: relative;
+		    padding-bottom: 50px;
+			}
+		}
+	}
+
+	&__background-col-2 {
+		@include column--no-padding(12);
+		@media( min-width: 768px ) {
+			@include column(12);
+			background: $theme-light-blue;
+		}
+
+		&--inset {
+			width: 100%;
+			background: $theme-white;
+			padding: 0 15px;
+			@media( min-width: 768px ) {
+				float: left;
+				width: 48%;
+		    margin: -50px 1% 50px;
 		    z-index: 2;
 		    position: relative;
 		    padding-bottom: 50px;
@@ -309,6 +325,17 @@
 
 		&--card {
 			@include column(4);
+			margin: 0 auto 25px;
+			text-align: center;
+			padding: 0 25px 25px;
+			@media( min-width: 768px ) {
+				margin: 0 auto;
+				padding: 0 15px;
+			}
+		}
+
+		&--card-full {
+			@include column(12);
 			margin: 0 auto 25px;
 			text-align: center;
 			padding: 0 25px 25px;
