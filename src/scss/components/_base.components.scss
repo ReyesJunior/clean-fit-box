@@ -147,6 +147,14 @@
 			}
 		}
 
+		&--title-secondary {
+			text-align: center;
+			// for overlap
+			@media( min-width: 768px ) {
+				margin-top: 35px;
+			}
+		}
+
 		&--button {
 			text-align: center;
 
