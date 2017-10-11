@@ -115,6 +115,7 @@
 	&__hero {
 		@include column(12);
 		position: relative;
+		padding: 0;
 		&--overlay {
 			position: absolute;
 			top: 0;

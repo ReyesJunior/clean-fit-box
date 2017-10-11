@@ -106,10 +106,15 @@ $grid-columns: 12;
 /* ==================================
 =====// Utility Overrides //===== */
 
-.u-max-width--xl {
+.u-max-width--l {
 	margin-left: auto !important;
 	margin-right: auto !important;
- 	max-width: 1440px !important;
+ 	max-width: 1200px !important;
+}
+.u-max-width--xl {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 1440px !important;
 }
 
 .u-no--overlap {
