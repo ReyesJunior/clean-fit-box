@@ -147,14 +147,6 @@
 			}
 		}
 
-		&--title-secondary {
-			text-align: center;
-			// for overlap
-			@media( min-width: 768px ) {
-				margin-top: 35px;
-			}
-		}
-
 		&--button {
 			text-align: center;
 
@@ -176,6 +168,25 @@
 					transition: 0.2s;
 				}
 			}
+		}
+	}
+
+	&__headline-secondary {
+		@include column(12);
+		background-color: $theme-light-blue;
+		// for overlap
+		@media( min-width: 768px ) {
+			position: absolute;
+			margin: auto;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+
+		&--title-secondary {
+			text-align: center;
+	    color: $theme-black;
 		}
 	}
 }
@@ -447,30 +458,30 @@
 		}
 
 		&--inner {
-			background: $theme-dark-grey;
-  			padding: 15px;
+			background: #BEC1C1;
+  		padding: 15px;
 			max-width: 400px;
 			margin: 0 auto;
 		}
 
 		&--month {
 			text-transform: uppercase;
-			color: $theme-white;
+			color: $theme-black;
 			margin-bottom: 15px;
 		}
 
 		&--underscore {
 			width: 100px;
 			margin-top: 0;
-			border-top: 1px solid $theme-white;
+			border-top: 1px solid $theme-black;
 		}
 
 		&--price {
-			color: $theme-white;
+			color: $theme-black;
 		}
 
 		&--discount {
-			color: $theme-white;
+			color: $theme-black;
 			font-style: italic;
 		}
 	}
@@ -486,14 +497,13 @@
 		@include column(12);
 		text-align: center;
 		text-transform: uppercase;
-		background-color: $theme-light-blue;
+		background-color: $theme-white;
 		color: $theme-black;
 		margin: 0 auto 45px;
 		padding: 25px 15px;
 		font-weight: 500;
 		transition: 0.5s;
 		@media( min-width: 768px ) {
-			background-color: $theme-white;
 			margin: 15px auto;
 		}
 	}
@@ -536,6 +546,12 @@
 				transition: 0.2s;
 	    	}
 		}
+	}
+
+	&__inquiry--email {
+		margin: 35px auto 50px;
+		text-align: center;
+		text-decoration: underline;
 	}
 }
 
