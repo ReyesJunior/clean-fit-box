@@ -546,17 +546,25 @@
 	@include row;
 	text-align: center;
 
+	&__hr {
+		width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 4px solid $theme-light-blue;
+	}
+
 	&__intro {
 		@include column(12);
-		margin: 15px auto 5px;
+		margin-bottom: 0;
 		text-align: center;
 		text-transform: uppercase;
 		color: $theme-black;
 		font-weight: 500;
 		transition: 0.5s;
 
-		&--mission {
-			margin: 0 auto 5px;
+		&--highlight {
+			margin: 0 auto 15px;
 			text-align: center;
 			text-transform: uppercase;
 			color: $theme-black;
@@ -568,6 +576,7 @@
 	}
 	&__copy {
 		@include column(12);
+		margin-bottom: 20px;
 	}
 	&__list {
 		@include column(12);
