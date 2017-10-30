@@ -159,12 +159,12 @@
 				font-weight: 700;
 				color: $theme-white;
 				text-decoration: none;
-				background-color: $theme-light-blue;
+				background-color: $theme-pink;
 				transition: 0.2s;
 				&:hover {
-					color: $theme-light-blue;
+					color: $theme-pink;
 					background-color: $theme-white;
-					border: 1px solid $theme-light-blue;
+					border: 1px solid $theme-pink;
 					transition: 0.2s;
 				}
 			}
