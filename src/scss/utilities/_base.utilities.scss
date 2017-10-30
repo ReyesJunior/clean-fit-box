@@ -117,6 +117,10 @@ $grid-columns: 12;
   max-width: 1440px !important;
 }
 
+.u-position--fixed {
+  position: fixed !important;
+}
+
 .u-no--overlap {
 	position: relative !important;
 }
@@ -129,8 +133,19 @@ $grid-columns: 12;
   margin-top: 25px !important;
 }
 
+.u-margin-top--50 {
+  margin-top: 50px !important;
+}
+
 .u-visibility--hidden {
 	visibility: hidden !important;
+}
+
+.u-fixed-header {
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
 }
 
 
