@@ -430,6 +430,7 @@
 		&--title {
 			margin: 0 auto;
 			text-align: center;
+			font-weight: 500;
 		}
 
 		&--cost {
@@ -459,7 +460,7 @@
 
 		&--inner {
 			background: #BEC1C1;
-  		padding: 15px;
+  		padding: 15px 15px 15px;
 			max-width: 400px;
 			margin: 0 auto;
 		}
@@ -468,6 +469,7 @@
 			text-transform: uppercase;
 			color: $theme-black;
 			margin-bottom: 15px;
+			font-size: 25px;
 		}
 
 		&--underscore {
@@ -478,11 +480,14 @@
 
 		&--price {
 			color: $theme-black;
+			font-size: 25px;
 		}
 
 		&--discount {
 			color: $theme-black;
 			font-style: italic;
+			font-size: 25px;
+			font-weight: 700;
 		}
 	}
 }
@@ -496,7 +501,6 @@
 	&__title {
 		@include column(12);
 		text-align: center;
-		text-transform: uppercase;
 		background-color: $theme-white;
 		color: $theme-black;
 		margin: 0 auto;
@@ -576,7 +580,6 @@
 		@include column(12);
 		margin-bottom: 0;
 		text-align: center;
-		text-transform: uppercase;
 		color: $theme-black;
 		font-weight: 500;
 		transition: 0.5s;
