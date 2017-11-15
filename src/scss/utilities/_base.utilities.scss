@@ -87,11 +87,15 @@ $grid-columns: 12;
 =====// Set-up //===== */
 
 .marked__text {
+  font-weight: bold;
 
 	&--blue {
 		color: $theme-light-blue;
-    font-weight: bold;
 	}
+
+  &--blue:hover {
+    color: $theme-pink;
+  }
 
 	&--black {
 		color: $theme-black;

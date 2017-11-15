@@ -211,6 +211,10 @@
 		padding-top: 10px;
     padding-bottom: 25px;
 
+    &--title {
+    	text-align: center;
+    }
+
 		&--list {
 			margin: 0 auto;
 			padding: 0 15px;
@@ -252,7 +256,7 @@
 		}
 
 		&--listing:before {
-			content: "\00d7";
+			content: "\58";
 		}
 	}
 }
@@ -648,6 +652,7 @@
 	}
 	&__socials:first-child(){
 		margin-right: 10px;
+	}
 }
 
 
