@@ -625,6 +625,16 @@
 }
 
 /* ==================================
+=====// c-portrait //===== */
+
+.c-portrait {
+	@include column(12);
+	max-width: 450px;
+	float: none;
+	margin-top: 15px;
+}
+
+/* ==================================
 =====// c-footer //===== */
 
 .c-footer {
